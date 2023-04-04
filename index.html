@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto P1 - Chat GPT</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    
+</head>
+<body>
+    <header>
+        <h1>PROJETO P1 - <ion-icon name="chatbubbles-outline"></ion-icon> CHAT GPT  </h1>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slides">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+
+                <div class="slide first">
+                    <img src="img/chatgpt1.jpg" alt="Chat_gpt_1">
+                </div>
+                <div class="slide">
+                    <img src="img/chatgpt2.jpg" alt="Chat_gpt_2">
+                </div>
+                <div class="slide">
+                    <img src="img/chatgpt3.jpg" alt="Chat_gpt_3">
+                </div>
+                <div class="slide">
+                    <img src="img/chatgpt4.jpg" alt="Chat_gpt_4">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <div class="circulo-nav">
+                    <label for="radio1" class="circulo-btn"></label>
+                    <label for="radio2" class="circulo-btn"></label>
+                    <label for="radio3" class="circulo-btn"></label>
+                    <label for="radio4" class="circulo-btn"></label>
+                </div>
+
+                
+
+            </div>
+        </div>
+       
+        <div class="box_question">
+            <p id="status"></p>
+            
+            <div id="historico"></div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="box_input">
+            <input type="text" class="mensagem" id="mensagem" placeholder="Digite aqui sua pergunta">
+            <button id="enviar"><ion-icon name="paper-plane-outline"></ion-icon></button>
+        </div>
+        <div id="rodape">
+            <p> Universidade de Vassouras - Curso Eng. do Software<br>
+                Disciplina Lab. WebSites Dinâmicos - Prof. Fabrício Dias</p>
+            <p>Desenvolvido por Pontes Junior</p>
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

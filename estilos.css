@@ -1,0 +1,238 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    font-size: 62.5%;/*10px*/
+
+}
+body{
+    font-size: 1.6rem;
+    list-style-type:none;
+    font-family: 'Roboto', sans-serif;
+    background: #f8f6f6;
+}
+
+
+/*header*/
+header{
+    background: #8d0303;
+    padding: 2rem;   
+}
+h1{
+    text-align: center!important;
+    color: #fff;
+}
+
+/*footer*/
+footer{
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;  
+    background: #fcfcfc;
+    border-top: #f1f1f1 solid 0.2rem;
+    padding-top: 0.6rem;
+}
+
+#rodape{
+    background: #8d0303;
+    padding: 1.2rem; 
+}
+
+#rodape p{
+    color:#fff;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.box_input{
+    display: flex;    
+    width: 80%;
+    justify-content: space-between;
+    border: 0.07rem solid #e3e3e3;
+    box-shadow: 0rem 0.4rem 1.6rem rgba(22, 22, 22, 0.1);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 1rem auto 1.6rem auto;
+}
+button{
+    border: 0;
+    background: none;
+}
+#enviar ion-icon{
+    font-size: 2.8rem;
+}
+#enviar:hover{
+    color: #8d0303;
+    transition: .4s;
+}
+.mensagem{
+    border:0;
+    width: 100%;background: none;
+}
+.box_input input{
+    border: 0;
+    outline: 0;
+}
+
+.box_input:has(:focus){
+    outline: 0.2rem #d3d3d3 solid;
+}
+.box_input input::placeholder{
+    font-size: 1.6rem;
+    font-weight:400;
+} 
+
+/* main conteudo*/
+main{
+    
+    margin-bottom:200px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.box_question{
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;  
+} 
+
+#status{
+    display: flex;
+    justify-content: center;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    margin: 1.6rem;
+    text-align: center;
+}
+
+#historico{
+    padding: 1rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.2rem;
+   
+}
+.box_usuario{
+    display: flex;
+    justify-content: end;
+}
+.box_chatgpt{
+    display: flex;
+    justify-content: start;
+    width:60%;
+}
+
+.msg_usuario{
+    background:#9f3636;
+    color: #FFF;
+    text-align: right;
+}
+.msg_chtgpt{
+    background:#e2e2e2;
+    text-align: left;
+}
+
+.msg_chtgpt,
+.msg_usuario{
+    border-radius: 6px;
+    border:1px solid #d3d3d3;
+    padding: 1.4rem;
+}
+
+/*slider*/
+
+.slider{
+    margin: 10px auto;
+    width:800px;
+    height: 400px;
+    overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+
+.slide{
+    width:25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+}
+
+.circulo-nav{
+    position: absolute;
+    width: 800px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+}
+.circulo-btn{
+    border:2px solid #fff;
+    padding: 5px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.circulo-btn:not(:Last-child){
+    margin-right: 20px;
+}
+.circulo-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.nav-auto div{
+    border:2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 20px;
+}
+
+#radio1:checked ~.nav-auto .auto-btn1{
+    background-color: #FFF;
+}
+#radio2:checked ~.nav-auto .auto-btn2{
+    background-color: #FFF;
+}
+#radio3:checked ~.nav-auto .auto-btn3{
+    background-color: #FFF;
+}
+#radio4:checked ~.nav-auto .auto-btn4{
+    background-color: #FFF;
+}
